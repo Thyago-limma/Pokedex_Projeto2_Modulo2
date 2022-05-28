@@ -1,0 +1,55 @@
+<%- include('partials/header.ejs') %>
+
+  <section id="detalhes">
+
+    <h2>
+      <%= pokemon.nome %>
+        <spam>#<%= pokemon.numero %>
+        </spam>
+    </h2>
+
+    <p id="detipo">
+      <%= pokemon.tipo %>
+    </p>
+
+    <div id="desc-content">
+
+      <div id="desc-img">
+        <img src="<%= pokemon.imagem %>" alt="Imagem do Pokemon">
+      </div>
+
+      <div id="desc-box">
+        <p>
+          <%= pokemon.descricao %>
+        </p>
+        <div id="atributos">
+      
+          <h3>Altura</h3>
+          <p>
+            <%= pokemon.altura %>
+          </p>
+
+          <h3>Peso</h3>
+          <p>
+            <%= pokemon.peso %>
+          </p>
+
+          <h3>Categoria</h3>
+          <p>
+            <%= pokemon.categoria %>
+          </p>
+
+          <h3>Habilidade</h3>
+          <p>
+            <%= pokemon.habilidade %>
+          </p>
+
+        </div>
+  
+      </div>
+
+    </div>
+
+  </section>
+
+<%- include('partials/footer.ejs') %>
